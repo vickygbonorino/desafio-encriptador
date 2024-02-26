@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/LogoEncriptador.jpeg" alt="Logo de Encriptex">
+        <h1>EncripteX</h1>
+    </header>
+
+    <main>
+        <section class="seccion-izquierda">
+            <div class="container-izquierdo">
+                <textarea placeholder="Ingrese el texto aquí" class="cajatexto" id="cajatexto"></textarea>
+            </div>
+
+            <div class="alerta">
+                <img src="img/icono-alerta.png" alt="alerta">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="container-botones">
+                <input type="button" class="btn-encriptar" value="Encriptar"
+                    onclick="btnEncriptar(); ocultarElemento()">
+                <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="btnDesencriptar()">
+            </div>
+        </section>
+
+        <section class="seccion-derecha">
+            <textarea id="container-resultado" class="container-resultado"></textarea>
+
+            <div id="imagenDerecha">
+                <div class="contenedor-munieco">
+                    <img src="img/MuñecoLupal.jpg" alt="munieco encriptador" class="munieco">
+                </div>
+
+                <div class="container-parrafo">
+                    <h3>Ningún mensaje fue <br>encontrado.</h3>
+                    <p>Ingresa el texto que desees encriptar <br>o desencriptar.</p>
+                </div>
+            </div>
+
+            <div class="container-copiar">
+                <input type="button" class="btn-copiar" value="Copiar" on onclick="copiarTexto()">
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Desarrollado por Victoria Gonzalez Bonorino</p>
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
